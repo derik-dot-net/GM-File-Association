@@ -52,6 +52,7 @@ Made possible with YellowAfterLife's extension:
 ## Installation
 
 Simply download the .yympps package file, along with the required extensions, import and add them to your project.
+Make sure to disable file system sandbox, which you'll find in Game Options under Windows in the General tab, after that you're set.
 
 ## Important Notes on Usage
 
