@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"gm_file_association",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gm_file_association",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
