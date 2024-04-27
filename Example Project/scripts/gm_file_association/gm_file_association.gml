@@ -34,11 +34,7 @@ function gm_file_association(argument0, argument1, argument2, argument3, argumen
 		//Store File Extension without dot
 		var file_ext_without_dot = string_replace(file_ext, ".", "");
 
-		//Ensures extensions are present
-		if !extension_exists("nsfs"){
-			show_message("GM Custom File Association failed. Missing Non-Sandboxed File System extension.");	
-			requirements_met = false;
-		}
+		//Ensures extension is present
 		if !extension_exists("execute_shell_simple_ext")  {
 			show_message("GM Custom File Association failed. Missing execute_shell_simple_ext extension.");	
 			requirements_met = false;
@@ -122,7 +118,7 @@ function gm_file_association(argument0, argument1, argument2, argument3, argumen
 			_ps1 += nl + @"";
 		
 			//Save Powershell Script
-			string_save_ns(_ps1, force_refresh_path);		
+			string_save(_ps1, force_refresh_path);		
 			
 		}
 		
@@ -188,7 +184,7 @@ function gm_file_association(argument0, argument1, argument2, argument3, argumen
 		_bat += nl + @"pause";
 	
 	//Save Batch File
-	string_save_ns(_bat, file_assoc_path);
+	string_save(_bat, file_assoc_path);
 
 	//Run Generated files
 	var show_cmd = 0;
@@ -197,4 +193,20 @@ function gm_file_association(argument0, argument1, argument2, argument3, argumen
 	
 	}
 	
+}
+
+///@param filename
+///@param string
+//Credit to JujuAdam's as this was pulled from his Furballs Project
+function string_save(argument0, argument1) {
+
+	var _name   = argument0;
+	var _string = argument1;
+
+	var _buffer = buffer_create( string_length( _string ), buffer_fixed, 1 );
+	buffer_write( _buffer, buffer_text, _string );
+	buffer_save( _buffer, _name );
+	buffer_delete( _buffer );
+
+
 }
