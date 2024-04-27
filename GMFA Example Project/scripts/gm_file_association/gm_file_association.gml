@@ -6,6 +6,9 @@
 /// @param {bool} force_refresh
 /// @param {bool} debug
 // Made by Derik.NET https://github.com/derik-dot-net
+// Inspired by JujuAdams Furballs 
+// Replicates standard practices for file association documented here:
+// https://learn.microsoft.com/en-us/windows/win32/shell/fa-intro
 function gm_file_association(argument0, argument1, argument2, argument3, argument4, argument5 = false, argument6 = false)
 {
 
@@ -32,8 +35,8 @@ function gm_file_association(argument0, argument1, argument2, argument3, argumen
 		var file_ext_without_dot = string_replace(file_ext, ".", "");
 
 		//Ensures extensions are present
-		if !extension_exists("libfilesystem"){
-			show_message("GM Custom File Association failed. Missing FileManger extension.");	
+		if !extension_exists("nsfs"){
+			show_message("GM Custom File Association failed. Missing Non-Sandboxed File System extension.");	
 			requirements_met = false;
 		}
 		if !extension_exists("execute_shell_simple_ext")  {
@@ -72,6 +75,7 @@ function gm_file_association(argument0, argument1, argument2, argument3, argumen
 			show_message("GM Custom File Association failed; Not a valid icon file.");	
 			requirements_met = false;
 		}
+			
 	}
 	
 	//If none of the error checks failed run script

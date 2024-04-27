@@ -1,4 +1,6 @@
 //File Extension
+//Please make sure your file extension is not already in use elsewhere, Microsoft recommends checking here:
+//https://www.iana.org/assignments/media-types/media-types.xhtml
 var file_ext = ".example";
 	
 //Store Path to Associated file
