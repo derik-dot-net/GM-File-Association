@@ -55,7 +55,7 @@ Simply download the .yympps package file, along with the required extensions, im
 ## Important Notes on Usage
 When using this system it is likely not a good idea to run this system unless your game/program has been compiled and installed. Running this script while testing from inside of Gamemaker can have unintended and/or unwanted results and effects such as some of the problems listed below:
 
-This system and the inherit way the file association is setup in Windows, despite that fact that many programs commonly do it, is inheritly dangerous if misused. One could hypothetically use this system to overwrite pre-existing file associations which could cause many issues, and be hard and time-consuming to reverse. Please test extensively before releasing any projec that uses this system. 
+This system and the inherit way the file association is setup in Windows, despite that fact that many programs commonly do it, is inheritly dangerous if misused. One could hypothetically use this system to overwrite pre-existing file associations which could cause many issues, and be hard and time-consuming to reverse. Please test extensively before releasing any project that uses this system. 
 
 When I tested this system I repeatedly uninstalled, re-compiled, and re-installed my project to ensure that it worked correctly. If your project is in a late enough stage to need the functionality provided by this system, I'd imagine this is a process you're willing to perform. 
 
