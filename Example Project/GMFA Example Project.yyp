@@ -36,8 +36,6 @@
   },
   "name":"GMFA Example Project",
   "resources":[
-    {"id":{"name":"execute_shell_simple_ext","path":"extensions/execute_shell_simple_ext/execute_shell_simple_ext.yy",},},
-    {"id":{"name":"nsfs","path":"extensions/nsfs/nsfs.yy",},},
     {"id":{"name":"file_association","path":"objects/file_association/file_association.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"gm_file_association","path":"scripts/gm_file_association/gm_file_association.yy",},},

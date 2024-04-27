@@ -16,7 +16,5 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings":[
-    {"name":"nsfs","order":1,"path":"extensions/nsfs/nsfs.yy",},
-  ],
+  "ResourceOrderSettings":[],
 }
