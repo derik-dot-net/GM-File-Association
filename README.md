@@ -23,7 +23,7 @@ File Association allows you to define a custom file extension which Windows will
 #### How does it work?
 First the script will check if a file exists inside of your program directory, this file tells the system if File Association has already been setup. Due to the nature of this system, you do not want to run it when not needed, feel free to implement a different way to check this. 
 
-After that the system generates a PowerShell script using strings that gets saved as a .ps1 file. This script forces Windows to refresh its Icon Cache that you can see changes made by this system immediately. This part of the process is option.
+After that the system generates a PowerShell script using strings that gets saved as a .ps1 file. This script forces Windows to refresh its Icon Cache so that you can see changes made by this system immediately. This part of the process is optional.
 
 Then the system generates a Batch file also using strings that gets saved into a .bat file. This Batch file checks for admin permisions, as they are required on most systems to manipulate the Registry, an action which is common, necessary, and standard practice for ANY program that does this, even Gamemaker itself.
 
